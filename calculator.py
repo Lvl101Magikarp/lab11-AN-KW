@@ -5,7 +5,30 @@ calculator.py
 One function per operation, in order.
 """
 # First example
-def add(a, b): 
-    pass
 
+import math
+
+def add(a, b): 
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if a == 0:
+        raise ZeroDivisionError("Denominator cannot be negative")
+    else:
+        return b / a
+
+def logarithm(a, b): # use math library/raise ValueError
+    try:
+        math.log(b, a)
+    except ValueError:
+        print("Log Error")
+
+def exponent(a, b):
+    return a ** b
 
