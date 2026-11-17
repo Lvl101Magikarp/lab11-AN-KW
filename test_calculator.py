@@ -42,7 +42,7 @@ class TestCalculator(unittest.TestCase):
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #     logarithm(0, 5)
     #     fill in code
-        with self.assertRaises(ValueError)
+        with self.assertRaises(ValueError):
             calculator.log(0, 5)
 
     def test_hypotenuse(self): # 3 assertions
